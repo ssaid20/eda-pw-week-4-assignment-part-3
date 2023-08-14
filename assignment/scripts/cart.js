@@ -3,18 +3,34 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 // Create a global variable named 'basket' and set it to an empty array
 let basket = [];
-// Create a function called 'addItem'
+// Created a function called 'addItem'
 function addItem(item) {
   basket.push(item); // Add the item to the 'basket' array
   return true; // Return true to indicate the item was added
 }
-// Create a function called 'listItems'
+// Created a function called 'listItems'
 function listItems() {
   for (let item of basket) {
     console.log(item); // Log each item in the 'basket' array
   }
 }
-
+// Created a function called 'empty'
+function empty() {
+    basket = []; // Reset the 'basket' array to an empty array
+  }
+  // Test the functions
+  console.log(`Basket is ${basket}`);
+  console.log('Adding apples (expect true)', addItem('apples'));
+  console.log(`Basket is now ${basket}`);
+  console.log('Adding oranges (expect true)', addItem('oranges'));
+  console.log(`Basket is now ${basket}`);
+  
+  console.log('Listing items in basket:');
+  listItems();
+  
+  console.log('Emptying the basket:');
+  empty();
+  console.log(`Basket is now ${basket}`);
 
 
 
