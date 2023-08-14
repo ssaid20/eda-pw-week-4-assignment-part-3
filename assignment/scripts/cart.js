@@ -20,9 +20,9 @@ function empty() {
   }
   // Test the functions
   console.log(`Basket is ${basket}`);
-  console.log('Adding apples (expect true)', addItem('apples'));
+  console.log('Adding apples ', addItem('apples'));
   console.log(`Basket is now ${basket}`);
-  console.log('Adding oranges (expect true)', addItem('oranges'));
+  console.log('Adding oranges ', addItem('oranges'));
   console.log(`Basket is now ${basket}`);
   
   console.log('Listing items in basket:');
